@@ -1,0 +1,21 @@
+{
+  "Id": "Policy1572397019017",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1572396949628",
+      "Action": [
+        "s3:DeleteObject",
+        "s3:GetObject",
+        "s3:PutObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::file-upload-example-mattl",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::898076693304:group/s3users"
+        ]
+      }
+    }
+  ]
+}
